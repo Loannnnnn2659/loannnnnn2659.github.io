@@ -1,4 +1,4 @@
-﻿(function () {
+(function () {
   const NAV_ITEMS = [
     { key: "home", href: "https://loannmkw.github.io", label: "Accueil" },
     { key: "tutoriels", href: "https://loannmkw.github.io/tutoriels", label: "Tutoriels" },
@@ -24,7 +24,7 @@
   <header class="header">
     <div class="nav-content">
       <a class="nav-home" href="https://loannmkw.github.io" aria-label="Accueil">
-        <img src="https://raw.githubusercontent.com/LoannMKW/loannmkw.github.io/refs/heads/main/Fichiers/Mii%20%26%20Backgrounds/Mii.png" alt="Icone du site">
+        <img src="https://github.com/LoannMKW/loannmkw.github.io/blob/main/Fichiers/Mii%20%26%20Backgrounds/Mii.webp?raw=true" alt="Icone du site">
       </a>
       <nav class="nav-links">
         ${navLinks}
