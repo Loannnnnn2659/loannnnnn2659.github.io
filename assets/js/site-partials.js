@@ -14,6 +14,7 @@
     const active = (opts && opts.active) || "home";
     const target = document.getElementById(targetId);
     if (!target) return;
+    const siteIcon = "https://github.com/LoannMKW/loannmkw.github.io/blob/main/Fichiers/Mii%20&%20Backgrounds/Mii.webp?raw=true";
 
     const navLinks = NAV_ITEMS.map((item) => {
       const activeClass = item.key === active ? " active" : "";
@@ -24,7 +25,7 @@
   <header class="header">
     <div class="nav-content">
       <a class="nav-home" href="https://loannmkw.github.io" aria-label="Accueil">
-        <img src="https://github.com/LoannMKW/loannmkw.github.io/blob/main/Fichiers/Mii%20%26%20Backgrounds/Mii.webp?raw=true" alt="Icone du site">
+        <img src="${siteIcon}" alt="Icone du site">
       </a>
       <nav class="nav-links">
         ${navLinks}
