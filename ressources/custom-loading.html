@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Custom Loading - Ressources</title>
+  <link rel="canonical" href="https://loannmkw.github.io/ressources/custom-loading" />
+  <meta name="description" content="Mod Wii pour Mario Kart Wii par Tokio avec un logo de chargement personnalisé." />
+  <meta property="og:title" content="Custom Loading - Ressources" />
+  <meta property="og:description" content="Mod Wii pour Mario Kart Wii par Tokio avec un logo de chargement personnalisé." />
+  <meta property="og:image" content="https://github.com/LoannMKW/loannmkw.github.io/blob/main/Fichiers/Ressources%20mods/Wii/Custom%20Loading/Capture%20d'%C3%A9cran%202026-05-02%20160412.png?raw=true" />
+  <meta property="og:url" content="https://loannmkw.github.io/ressources/custom-loading" />
+  <meta property="og:type" content="website" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Custom Loading - Ressources" />
+  <meta name="twitter:description" content="Mod Wii pour Mario Kart Wii par Tokio avec un logo de chargement personnalisé." />
+  <meta name="twitter:image" content="https://github.com/LoannMKW/loannmkw.github.io/blob/main/Fichiers/Ressources%20mods/Wii/Custom%20Loading/Capture%20d'%C3%A9cran%202026-05-02%20160412.png?raw=true" />
+  <link rel="icon" href="https://raw.githubusercontent.com/LoannMKW/loannmkw.github.io/refs/heads/main/Fichiers/Mii%20%26%20Backgrounds/Mii.png" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap" rel="stylesheet">
+  <style>
+    :root{--bg:#08060a;--accent:#ff8a00;--accent-2:#ffd66b;--muted:#cfcfd6;--light-text:#fff;}
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{margin:0;font-family:'Inter',system-ui,Segoe UI,Roboto,Arial,"Noto Sans",sans-serif;background:radial-gradient(1800px 900px at 10% 10%, rgba(255,138,0,0.1), transparent),radial-gradient(1500px 700px at 90% 60%, rgba(255,214,107,0.06), transparent),var(--bg);background-repeat:no-repeat,no-repeat,no-repeat;background-attachment:fixed,fixed,fixed;color:var(--muted);min-height:100vh;min-height:100svh;}
+    .bg-img{position:fixed;inset:0;z-index:-2;background-image:url('https://raw.githubusercontent.com/LoannMKW/loannmkw.github.io/refs/heads/main/Fichiers/Mii%20%26%20Backgrounds/background2.png');background-size:cover;background-position:center;opacity:.14;filter:none;}
+    .header{position:fixed;top:0;left:0;width:100%;padding:15px 20px;z-index:10;backdrop-filter:none;background:rgba(8,6,10,.7);border-bottom:1px solid rgba(255,255,255,.05);display:flex;justify-content:center;}
+    .nav-content{display:flex;justify-content:space-between;align-items:center;max-width:1200px;width:100%;}
+    .nav-home{display:inline-flex;align-items:center;justify-content:center;text-decoration:none;flex-shrink:0;}
+    .nav-home img{width:34px;height:34px;border-radius:10px;border:2px solid rgba(255,138,0,.55);box-shadow:0 4px 16px rgba(0,0,0,.45);transition:transform .2s ease,box-shadow .2s ease;}
+    .nav-home:hover img{transform:translateY(-1px);box-shadow:0 8px 20px rgba(0,0,0,.55);}
+    .nav-links{display:flex;gap:30px;align-items:center;justify-content:flex-start;}
+    .nav-link{color:var(--muted);text-decoration:none;font-weight:600;padding:5px 0;border-bottom:2px solid transparent;transition:color .2s,border-bottom .2s;}
+    .nav-link:hover{color:var(--accent-2);border-bottom:2px solid var(--accent)}
+    .nav-link.active{color:var(--accent);border-bottom:2px solid var(--accent)}
+    .toggle{color:#fff;cursor:pointer;padding:8px 12px;border-radius:999px;background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.05);transition:background .2s;font-weight:600;font-size:14px;}
+    .toggle:hover{background:rgba(255,255,255,0.1)}
+    .toggle.playing{background:var(--accent);color:#1b0b00;font-weight:700;border:none;}
+    .container{width:100%;max-width:1200px;margin:0 auto;padding:30px 20px;padding-top:calc(var(--header-offset,88px) + 20px);}
+    .section-glass{padding:30px;margin-bottom:24px;border-radius:24px;background:linear-gradient(135deg, rgba(255,255,255,0.03), rgba(255,255,255,0.01));border:1px solid rgba(255,255,255,0.05);box-shadow:0 10px 40px rgba(0,0,0,.4);backdrop-filter:none;}
+    .mod-logo{width:min(760px,100%);display:block;margin:0 auto 20px;border-radius:14px;border:1px solid rgba(255,255,255,.12);box-shadow:0 12px 28px rgba(0,0,0,.45);}
+    .title{margin:0 0 8px;font-family:'Montserrat',sans-serif;color:var(--light-text);font-size:2.2rem;text-align:center;line-height:1.1;}
+    .subtitle{text-align:center;margin:0 0 22px;color:var(--accent-2);font-weight:600;}
+    .description{margin:0;line-height:1.7;font-size:1.02rem;}
+    .mod-meta{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px;margin:20px 0;}
+    .meta-item{background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.08);border-radius:12px;padding:12px;}
+    .meta-item strong{color:var(--light-text);display:block;margin-bottom:4px;}
+    .author-link{color:var(--accent);font-weight:700;text-decoration:underline;text-underline-offset:2px;transition:color .2s ease;}
+    .author-link:hover{color:var(--accent-2);}
+    .actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:18px;}
+    .btn{display:inline-flex;align-items:center;justify-content:center;text-decoration:none;color:#1b0b00;background:linear-gradient(90deg,var(--accent),var(--accent-2));padding:12px 16px;border-radius:12px;font-weight:700;border:none;transition:transform .2s ease,box-shadow .2s ease,filter .2s ease;box-shadow:0 6px 18px rgba(0,0,0,.35);}
+    .btn.secondary{background:rgba(255,255,255,0.04);color:var(--muted);border:1px solid rgba(255,255,255,0.1);}
+    .btn:hover{transform:translateY(-4px);box-shadow:0 14px 32px rgba(0,0,0,.5);filter:brightness(1.04);}
+    .gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:14px;}
+    .gallery img{width:100%;border-radius:14px;border:1px solid rgba(255,255,255,0.1);box-shadow:0 8px 24px rgba(0,0,0,.45);background:#0d0a10;}
+    .widget-container{display:flex;justify-content:center;align-items:center;margin-top:8px;}
+    .discord-widget-card{width:100%;max-width:760px;display:grid;grid-template-columns:92px 1fr auto;gap:14px;align-items:center;background:linear-gradient(135deg, rgba(88,101,242,0.18), rgba(255,255,255,0.04));border:1px solid rgba(255,255,255,0.12);border-radius:18px;padding:14px;box-shadow:0 10px 30px rgba(0,0,0,0.45);}
+    .discord-widget-icon{width:92px;height:92px;border-radius:16px;object-fit:cover;border:2px solid rgba(255,255,255,0.14);}
+    .discord-widget-title{margin:0 0 6px;color:var(--light-text);font-size:1.2rem;font-weight:800;}
+    .discord-widget-text{margin:0;color:var(--muted);font-size:.95rem;line-height:1.4;}
+    .discord-widget-btn{display:inline-flex;align-items:center;justify-content:center;text-decoration:none;background:linear-gradient(90deg,#5865F2,#7984f4);color:#fff;border-radius:12px;padding:10px 14px;font-weight:800;border:0;white-space:nowrap;box-shadow:0 8px 24px rgba(0,0,0,.35);transition:transform .2s ease,box-shadow .2s ease;}
+    .discord-widget-btn:hover{transform:translateY(-4px);box-shadow:0 15px 40px rgba(0,0,0,.55);}
+    .footer-section{display:flex;justify-content:center;align-items:center;font-size:13px;color:rgba(255,255,255,.45);padding:20px 0 10px;text-align:center;}
+    .back-to-top{position:fixed;right:18px;bottom:18px;z-index:60;border:1px solid rgba(255,255,255,.12);background:linear-gradient(90deg,var(--accent),var(--accent-2));color:#1b0b00;font-weight:800;font-size:13px;padding:10px 12px;border-radius:999px;cursor:pointer;box-shadow:0 8px 24px rgba(0,0,0,.45);opacity:0;transform:translateY(8px);pointer-events:none;transition:opacity .2s ease,transform .2s ease;}
+    .back-to-top.show{opacity:1;transform:translateY(0);pointer-events:auto;}
+    @media (max-width:700px){.header{padding:8px 10px}.nav-content{display:grid;grid-template-columns:auto 1fr auto;gap:8px;align-items:center}.nav-home img{width:28px;height:28px;border-radius:8px}.nav-links{min-width:0;gap:10px;flex-wrap:nowrap;overflow-x:auto;justify-content:flex-start;scrollbar-width:none}.nav-links::-webkit-scrollbar{display:none}.nav-link{font-size:13px;white-space:nowrap}.toggle{padding:5px 8px;font-size:12px}.container{padding:20px 12px;padding-top:calc(var(--header-offset,88px) + 12px)}.section-glass{padding:20px;border-radius:18px}.title{font-size:1.8rem}.discord-widget-card{grid-template-columns:68px 1fr;gap:10px;padding:12px}.discord-widget-icon{width:68px;height:68px;border-radius:12px}.discord-widget-btn{grid-column:1 / -1;width:100%}.back-to-top{right:12px;bottom:12px;font-size:12px;padding:8px 10px}}
+  </style>
+</head>
+<body>
+  <div class="bg-img" aria-hidden="true"></div>
+  <div id="site-header"></div>
+  <script src="../assets/js/site-partials.js"></script>
+  <script>
+    window.CreeperPartials.renderHeader({ targetId: 'site-header', active: 'ressources' });
+  </script>
+
+  <main class="container">
+    <section class="section-glass">
+      <img decoding="async" class="mod-logo" src="https://github.com/LoannMKW/loannmkw.github.io/blob/main/Fichiers/Ressources%20mods/Wii/Custom%20Loading/Capture%20d'%C3%A9cran%202026-05-02%20160412.png?raw=true" alt="Custom Loading">
+      <h1 class="title">Custom Loading</h1>
+      <p class="subtitle">Mod Wii pour Mario Kart Wii</p>
+
+      <p class="description">
+        Cette course contient un logo chargement personnalisé.
+      </p>
+
+      <div class="mod-meta">
+        <div class="meta-item">
+          <strong>Auteur</strong>
+          <a href="../auteurs/tokio" class="author-link">Tokio</a>
+        </div>
+        <div class="meta-item">
+          <strong>Console & Date</strong>
+          🎮 Wii (Mario Kart Wii)
+          <br>📅 Publié le 02/05/2026
+        </div>
+        <div class="meta-item">
+          <strong>Téléchargement</strong>
+          Race.szs
+        </div>
+      </div>
+
+      <div class="actions">
+        <a class="btn" href="https://github.com/LoannMKW/loannmkw.github.io/raw/refs/heads/main/Fichiers/Ressources%20mods/Wii/Custom%20Loading/Race.szs" target="_blank" rel="noopener noreferrer">Télécharger (1,48 Mo)</a>
+        <a class="btn secondary" href="../ressources">Retour à la liste</a>
+      </div>
+    </section>
+
+    <section class="section-glass">
+      <h2 style="margin-top:0;color:var(--light-text);font-size:1.6rem;">Image d'aperçu</h2>
+      <div class="gallery">
+        <img loading="lazy" decoding="async" src="https://github.com/LoannMKW/loannmkw.github.io/blob/main/Fichiers/Ressources%20mods/Wii/Custom%20Loading/Capture%20d'%C3%A9cran%202026-05-02%20160412.png?raw=true" alt="Custom Loading aperçu">
+      </div>
+    </section>
+
+    <section class="section-glass">
+      <div class="widget-container">
+        <div class="discord-widget-card">
+          <img loading="lazy" decoding="async" class="discord-widget-icon" src="https://raw.githubusercontent.com/LoannMKW/loannmkw.github.io/refs/heads/main/Fichiers/Mii%20%26%20Backgrounds/lv_0_2025112922-1764451316159.gif" alt="Logo du serveur Discord">
+          <div>
+            <h3 class="discord-widget-title">Rejoins le serveur Discord</h3>
+            <p class="discord-widget-text">Entraide modding, ressources utiles, astuces, chill (soirées jeux) et communauté active chaque jour.</p>
+          </div>
+          <a class="discord-widget-btn" href="https://discord.gg/AQ7w57CKk8" target="_blank" rel="noopener noreferrer">Rejoindre</a>
+        </div>
+      </div>
+    </section>
+  </main>
+  <div id="site-footer"></div>
+  <script>
+    window.CreeperPartials.renderFooter({ targetId: 'site-footer' });
+  </script>
+  <button id="backToTop" class="back-to-top" aria-label="Retour en haut" title="Retour en haut">&uarr;</button>
+
+  <audio id="bgAudio" loop>
+    <source src="https://github.com/LoannMKW/loannmkw.github.io/raw/refs/heads/main/Fichiers/Musiques/06.%20Purchase%20Software%20(3DS).mp3" type="audio/mpeg">
+  </audio>
+
+  <script>
+  const audio = document.getElementById('bgAudio');
+  const btn = document.getElementById('playPause');
+  let playing = false;
+  function toggleAudio() {
+    if (!playing) {
+      audio.volume = 0.28;
+      audio.play().then(() => {
+        btn.textContent = '🔊 Lecture';
+        btn.classList.add('playing');
+        playing = true;
+      }).catch(() => {
+        btn.textContent = '🔇 Erreur';
+        btn.classList.remove('playing');
+        playing = false;
+      });
+    } else {
+      audio.pause();
+      btn.textContent = '🔈 Jouer';
+      btn.classList.remove('playing');
+      playing = false;
+    }
+  }
+  btn.addEventListener('click', toggleAudio);
+  </script>
+  <script>
+  (function () {
+    const root = document.documentElement;
+    const header = document.querySelector('.header');
+    if (!header) return;
+    const syncHeaderOffset = () => {
+      root.style.setProperty('--header-offset', `${header.offsetHeight + 8}px`);
+    };
+    syncHeaderOffset();
+    window.addEventListener('resize', syncHeaderOffset);
+    window.addEventListener('orientationchange', syncHeaderOffset);
+    window.addEventListener('load', syncHeaderOffset);
+  })();
+  </script>
+  <script>
+  (function () {
+    const topBtn = document.getElementById('backToTop');
+    if (!topBtn) return;
+    const syncBtn = () => {
+      if (window.scrollY > 280) topBtn.classList.add('show');
+      else topBtn.classList.remove('show');
+    };
+    topBtn.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+    window.addEventListener('scroll', syncBtn, { passive: true });
+    window.addEventListener('load', syncBtn);
+    syncBtn();
+  })();
+  </script>
+</body>
+</html>
