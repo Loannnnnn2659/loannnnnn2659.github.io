@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Profil Tokio</title>
+  <link rel="canonical" href="https://loannmkw.github.io/auteurs/tokio" />
+  <meta name="description" content="Retrouvez tous les mods publiés par Tokio sur CreeperTV." />
+  <meta property="og:title" content="Profil Tokio" />
+  <meta property="og:description" content="Retrouvez tous les mods publiés par Tokio sur CreeperTV." />
+  <meta property="og:image" content="https://github.com/LoannMKW/loannmkw.github.io/blob/main/Fichiers/Profils%20moddeurs%20non%20staff/tokio.jpg?raw=true" />
+  <meta property="og:url" content="https://loannmkw.github.io/auteurs/tokio" />
+  <meta property="og:type" content="website" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Profil Tokio" />
+  <meta name="twitter:description" content="Retrouvez tous les mods publiés par Tokio sur CreeperTV." />
+  <meta name="twitter:image" content="https://github.com/LoannMKW/loannmkw.github.io/blob/main/Fichiers/Profils%20moddeurs%20non%20staff/tokio.jpg?raw=true" />
+  <link rel="icon" href="https://raw.githubusercontent.com/LoannMKW/loannmkw.github.io/refs/heads/main/Fichiers/Mii%20%26%20Backgrounds/Mii.png" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap" rel="stylesheet">
+  <style>
+    :root{--bg:#08060a;--accent:#ff8a00;--accent-2:#ffd66b;--muted:#cfcfd6;--light-text:#fff;}
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{margin:0;font-family:'Inter',system-ui,Segoe UI,Roboto,Arial,"Noto Sans",sans-serif;background:radial-gradient(1800px 900px at 10% 10%, rgba(255,138,0,0.1), transparent),radial-gradient(1500px 700px at 90% 60%, rgba(255,214,107,0.06), transparent),var(--bg);background-repeat:no-repeat,no-repeat,no-repeat;background-attachment:fixed,fixed,fixed;color:var(--muted);min-height:100vh;min-height:100svh;}
+    .bg-img{position:fixed;inset:0;z-index:-2;background-image:url('https://github.com/LoannMKW/loannmkw.github.io/blob/main/Fichiers/Banni%C3%A8res%20de%20profils/tokio.jpg?raw=true');background-size:cover;background-position:center;opacity:.2;filter:none;}
+    .header{position:fixed;top:0;left:0;width:100%;padding:15px 20px;z-index:10;backdrop-filter:none;background:rgba(8,6,10,.7);border-bottom:1px solid rgba(255,255,255,.05);display:flex;justify-content:center;}
+    .nav-content{display:flex;justify-content:space-between;align-items:center;max-width:1200px;width:100%;}
+    .nav-home{display:inline-flex;align-items:center;justify-content:center;text-decoration:none;flex-shrink:0;}
+    .nav-home img{width:34px;height:34px;border-radius:10px;border:2px solid rgba(255,138,0,.55);box-shadow:0 4px 16px rgba(0,0,0,.45);transition:transform .2s ease,box-shadow .2s ease;}
+    .nav-home:hover img{transform:translateY(-1px);box-shadow:0 8px 20px rgba(0,0,0,.55);}
+    .nav-links{display:flex;gap:30px;align-items:center;justify-content:flex-start;}
+    .nav-link{color:var(--muted);text-decoration:none;font-weight:600;padding:5px 0;border-bottom:2px solid transparent;transition:color .2s,border-bottom .2s;}
+    .nav-link:hover{color:var(--accent-2);border-bottom:2px solid var(--accent)}
+    .nav-link.active{color:var(--accent);border-bottom:2px solid var(--accent)}
+    .toggle{color:#fff;cursor:pointer;padding:8px 12px;border-radius:999px;background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.05);transition:background .2s;font-weight:600;font-size:14px;}
+    .toggle:hover{background:rgba(255,255,255,0.1)}
+    .toggle.playing{background:var(--accent);color:#1b0b00;font-weight:700;border:none;}
+    .container{width:100%;max-width:1200px;margin:0 auto;padding:30px 20px;padding-top:calc(var(--header-offset,88px) + 20px);}
+    .section-glass{padding:30px;margin-bottom:24px;border-radius:24px;background:linear-gradient(135deg, rgba(255,255,255,0.03), rgba(255,255,255,0.01));border:1px solid rgba(255,255,255,0.05);box-shadow:0 10px 40px rgba(0,0,0,.4);backdrop-filter:none;}
+    .profile{display:flex;gap:18px;align-items:center;flex-wrap:wrap;}
+    .avatar{width:96px;height:96px;border-radius:16px;object-fit:cover;border:2px solid rgba(255,255,255,.14);box-shadow:0 10px 28px rgba(0,0,0,.45);}
+    .title{margin:0;font-family:'Montserrat',sans-serif;font-size:2rem;line-height:1;color:var(--light-text)}
+    .title-row{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+    .subtitle{margin:8px 0 0;color:var(--accent-2);font-weight:600}
+    .role-tag{display:inline-flex;align-items:center;padding:4px 10px;border-radius:999px;background:rgba(255,138,0,.16);border:1px solid rgba(255,214,107,.45);color:#ffe29b;font-weight:800;font-size:12px;letter-spacing:.2px}
+    .social-links{display:flex;gap:10px;align-items:center;margin-top:10px}
+    .social-link{display:inline-flex;align-items:center;justify-content:center;width:36px;height:36px;border-radius:10px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.14);transition:transform .2s ease,box-shadow .2s ease,border-color .2s ease}
+    .social-link:hover{transform:translateY(-2px);border-color:rgba(255,214,107,.65);box-shadow:0 10px 20px rgba(0,0,0,.35)}
+    .social-link img{width:20px;height:20px;object-fit:contain}
+    .mods-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;}
+    .mod-card{display:block;text-decoration:none;color:inherit;border-radius:16px;overflow:hidden;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);box-shadow:0 8px 25px rgba(0,0,0,.45);transition:transform .25s ease,box-shadow .25s ease,border-color .25s ease;}
+    .mod-card:hover{transform:translateY(-4px);box-shadow:0 15px 40px rgba(255,138,0,.25);border-color:rgba(255,138,0,.55)}
+    .mod-media{position:relative}
+    .mod-thumb{width:100%;height:170px;object-fit:cover;background:linear-gradient(45deg,#1b0b00,#331a00)}
+    .mod-tag{display:inline-flex;align-items:center;position:absolute;left:12px;bottom:12px;padding:4px 10px;border-radius:999px;background:rgba(8,6,10,.75);border:1px solid rgba(255,214,107,.5);color:#ffe29b;font-size:12px;font-weight:800;backdrop-filter:none;}
+    .mod-body{padding:14px}
+    .mod-title{margin:0 0 8px;color:var(--light-text);font-weight:800;font-size:1.08rem}
+    .mod-author-line{margin:0 0 8px;color:#ffd66b;font-size:.93rem;font-weight:700}
+    .mod-author-link{color:var(--accent);cursor:pointer;text-decoration:underline;text-underline-offset:2px;transition:color .2s ease}
+    .mod-author-link:hover{color:var(--accent-2)}
+    .mod-desc{margin:0;color:var(--muted);line-height:1.45;font-size:.95rem}
+    .footer-section{display:flex;justify-content:center;align-items:center;font-size:13px;color:rgba(255,255,255,.45);padding:20px 0 10px;text-align:center;}
+    .back-to-top{position:fixed;right:18px;bottom:18px;z-index:60;border:1px solid rgba(255,255,255,.12);background:linear-gradient(90deg,var(--accent),var(--accent-2));color:#1b0b00;font-weight:800;font-size:13px;padding:10px 12px;border-radius:999px;cursor:pointer;box-shadow:0 8px 24px rgba(0,0,0,.45);opacity:0;transform:translateY(8px);pointer-events:none;transition:opacity .2s ease,transform .2s ease;}
+    .back-to-top.show{opacity:1;transform:translateY(0);pointer-events:auto}
+    @media (max-width:1050px){.mods-grid{grid-template-columns:repeat(2,minmax(0,1fr));}}
+    @media (max-width:700px){.header{padding:8px 10px}.nav-content{display:grid;grid-template-columns:auto 1fr auto;gap:8px;align-items:center}.nav-home img{width:28px;height:28px;border-radius:8px}.nav-links{min-width:0;gap:10px;flex-wrap:nowrap;overflow-x:auto;justify-content:flex-start;scrollbar-width:none}.nav-links::-webkit-scrollbar{display:none}.nav-link{font-size:13px;white-space:nowrap}.toggle{padding:5px 8px;font-size:12px}.container{padding:20px 12px;padding-top:calc(var(--header-offset,88px) + 12px)}.section-glass{padding:20px;border-radius:18px}.title{font-size:1.6rem}.mods-grid{grid-template-columns:1fr}.back-to-top{right:12px;bottom:12px;font-size:12px;padding:8px 10px}}
+  </style>
+</head>
+<body>
+  <div class="bg-img" aria-hidden="true"></div>
+  <div id="site-header"></div>
+  <script src="../assets/js/site-partials.js"></script>
+  <script>
+    window.CreeperPartials.renderHeader({ targetId: 'site-header', active: 'ressources' });
+  </script>
+
+  <main class="container">
+    <section class="section-glass">
+      <div class="profile">
+        <img decoding="async" class="avatar" src="https://github.com/LoannMKW/loannmkw.github.io/blob/main/Fichiers/Profils%20moddeurs%20non%20staff/tokio.jpg?raw=true" alt="Profil Tokio">
+        <div>
+          <div class="title-row">
+            <h1 class="title">Tokio</h1>
+            <span class="role-tag">Membre</span>
+          </div>
+          <p class="subtitle">Membre depuis le 02/05/2026</p>
+          <div class="social-links" aria-label="Réseaux sociaux de Tokio">
+            <a class="social-link" href="https://www.youtube.com/@tiki0x" target="_blank" rel="noopener noreferrer" aria-label="YouTube" title="YouTube">
+              <img src="../Fichiers/Icones/R&eacute;seaux/youtube.png" alt="Icône YouTube">
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-glass">
+      <h2 style="margin-top:0;color:var(--light-text);font-size:1.4rem;">Créations - 1 mod publié</h2>
+      <div class="mods-grid">
+        <a class="mod-card" href="../ressources/menu-single-select-image">
+          <div class="mod-media">
+            <img loading="lazy" decoding="async" class="mod-thumb" src="https://github.com/LoannMKW/loannmkw.github.io/blob/main/Fichiers/Ressources%20mods/Wii/Select%20Image/Screenshot_2026-04-22_22-45-03.png?raw=true" alt="Aperçu Menu Single Select Image">
+            <span class="mod-tag">🎮 Wii · Mod</span>
+          </div>
+          <div class="mod-body">
+            <h3 class="mod-title">Menu Single Select Image</h3>
+            <p class="mod-author-line">Publié par <span class="mod-author-link" role="link" tabindex="0" data-author-url="../auteurs/tokio">Tokio</span></p>
+            <p class="mod-desc">Mod Mario Kart Wii qui ajoute des images des courses dans le Menusingle.</p>
+          </div>
+        </a>
+      </div>
+    </section>
+  </main>
+  <div id="site-footer"></div>
+  <script>
+    window.CreeperPartials.renderFooter({ targetId: 'site-footer' });
+  </script>
+  <button id="backToTop" class="back-to-top" aria-label="Retour en haut" title="Retour en haut">&uarr;</button>
+
+  <audio id="bgAudio" loop>
+    <source src="https://github.com/LoannMKW/loannmkw.github.io/raw/refs/heads/main/Fichiers/Musiques/06.%20Purchase%20Software%20(3DS).mp3" type="audio/mpeg">
+  </audio>
+
+  <script>
+  const audio = document.getElementById('bgAudio');
+  const btn = document.getElementById('playPause');
+  let playing = false;
+  function toggleAudio() {
+    if (!playing) {
+      audio.volume = 0.28;
+      audio.play().then(() => {
+        btn.textContent = '🔊 Lecture';
+        btn.classList.add('playing');
+        playing = true;
+      }).catch(() => {
+        btn.textContent = '🔇 Erreur';
+        btn.classList.remove('playing');
+        playing = false;
+      });
+    } else {
+      audio.pause();
+      btn.textContent = '🔈 Jouer';
+      btn.classList.remove('playing');
+      playing = false;
+    }
+  }
+  btn.addEventListener('click', toggleAudio);
+  </script>
+  <script>
+  (function () {
+    const root = document.documentElement;
+    const header = document.querySelector('.header');
+    if (!header) return;
+    const syncHeaderOffset = () => {
+      root.style.setProperty('--header-offset', `${header.offsetHeight + 8}px`);
+    };
+    syncHeaderOffset();
+    window.addEventListener('resize', syncHeaderOffset);
+    window.addEventListener('orientationchange', syncHeaderOffset);
+    window.addEventListener('load', syncHeaderOffset);
+  })();
+  </script>
+  <script>
+  (function () {
+    const topBtn = document.getElementById('backToTop');
+    if (!topBtn) return;
+    const syncBtn = () => {
+      if (window.scrollY > 280) topBtn.classList.add('show');
+      else topBtn.classList.remove('show');
+    };
+    topBtn.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+    window.addEventListener('scroll', syncBtn, { passive: true });
+    window.addEventListener('load', syncBtn);
+    syncBtn();
+  })();
+  </script>
+  <script>
+  (function () {
+    const navR = document.querySelector('.nav-links a[href="https://loannmkw.github.io/ressources"]');
+    const navP = document.querySelector('.nav-links a[href="https://loannmkw.github.io/profils"]');
+    if (!navR || !navP) return;
+
+    const setActive = (source) => {
+      navR.classList.remove('active');
+      navP.classList.remove('active');
+      if (source === 'profils') navP.classList.add('active');
+      else navR.classList.add('active');
+    };
+
+    const params = new URLSearchParams(window.location.search);
+    const fromParam = params.get('from');
+    if (fromParam === 'profils' || fromParam === 'ressources') {
+      sessionStorage.setItem('auteurs_nav_source', fromParam);
+      setActive(fromParam);
+      return;
+    }
+
+    let fromReferrer = null;
+    try {
+      if (document.referrer) {
+        const refPath = new URL(document.referrer).pathname.toLowerCase();
+        if (refPath.includes('/profils')) fromReferrer = 'profils';
+        else if (refPath.includes('/ressources')) fromReferrer = 'ressources';
+      }
+    } catch (_) {}
+
+    if (fromReferrer) {
+      sessionStorage.setItem('auteurs_nav_source', fromReferrer);
+      setActive(fromReferrer);
+      return;
+    }
+
+    const saved = sessionStorage.getItem('auteurs_nav_source');
+    if (saved === 'profils' || saved === 'ressources') {
+      setActive(saved);
+    }
+  })();
+  </script>
+  <script>
+  (function () {
+    const authorLinks = document.querySelectorAll('.mod-author-link[data-author-url]');
+    if (!authorLinks.length) return;
+    authorLinks.forEach((el) => {
+      const goToAuthor = () => {
+        const url = el.getAttribute('data-author-url');
+        if (!url) return;
+        window.location.href = url;
+      };
+      el.addEventListener('click', (event) => {
+        event.preventDefault();
+        event.stopPropagation();
+        goToAuthor();
+      });
+      el.addEventListener('keydown', (event) => {
+        if (event.key === 'Enter' || event.key === ' ') {
+          event.preventDefault();
+          event.stopPropagation();
+          goToAuthor();
+        }
+      });
+    });
+  })();
+  </script>
+</body>
+</html>
